@@ -93,6 +93,7 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	@Override
 	public void registerBeanDefinitions(Document doc, XmlReaderContext readerContext) {
 		this.readerContext = readerContext;
+		//真正解析xml的部分
 		doRegisterBeanDefinitions(doc.getDocumentElement());
 	}
 
